@@ -29,9 +29,9 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <>
+    <React.Fragment>
       {testimonials.length && (
-        <>
+        <React.Fragment>
           <div className="app__testimonial-item app__flex">
             <img
               src={urlFor(testimonials[currentIndex].imageurl)}
@@ -73,7 +73,7 @@ const Testimonials = () => {
               <HiChevronRight />
             </div>
           </div>
-        </>
+        </React.Fragment>
       )}
 
       <div className="app__testimonial-brands app__flex">
@@ -87,7 +87,7 @@ const Testimonials = () => {
           </motion.div>
         ))}
       </div>
-    </>
+    </React.Fragment>
   );
 };
 
